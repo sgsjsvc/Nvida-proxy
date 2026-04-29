@@ -1,0 +1,27 @@
+health_check:
+  enabled: true
+  endpoint: /v1/models
+  interval: 60
+keys:
+- enabled: true
+  key: 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
+  weight: 1
+- enabled: true
+  key: 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
+  weight: 1
+logging:
+  file: proxy.log
+  level: info
+retry:
+  backoff_ms: 1000
+  max_attempts: 3
+rpm_limit: 40
+server:
+  gui_port: 8081
+  host: 127.0.0.1
+  proxy_port: 8080
+strategy: rpm_aware
+upstream:
+  base_url: https://integrate.api.nvidia.com
+  endpoint: /v1/chat/completions
+  timeout: 900

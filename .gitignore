@@ -1,0 +1,32 @@
+# 自带环境（不提交到 git）
+env/
+
+# 数据库
+data/
+
+# 前端构建产物
+backend/static/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# 日志
+*.log
+logs/
+
+# 编辑器
+.vscode/
+.idea/
+*.sw?
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+dist/
